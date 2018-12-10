@@ -1,8 +1,21 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Unit test class for the heap object
+ *
+ * @author Lauren Rose
+ * @version 9 December 2018
+ *
+ * ITEC 324 - Principles of Computer Science III
+ * Radford University, Department of Information Technology
+ *
+ * All code herein is for use only by the author. Author has
+ * taken necessary measures to protect this code from being
+ * accessible to other students, and therefore is not
+ * responsible for any unauthorized use.
+ */
 class HeapTest {
 
     private Heap testHeap;

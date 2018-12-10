@@ -18,6 +18,12 @@ import java.util.Scanner;
  * Test data: 4 3 9 2 5 1 8 6 0 7 -1
  */
 public class HeapSorter {
+
+    /**
+     * runs the main program
+     *
+     * @param args standard arguments
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

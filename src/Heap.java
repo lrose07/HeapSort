@@ -22,7 +22,6 @@ class Heap {
 
     /**
      * creates a new empty heap
-     *
      * @param size the size to make the underlying array
      */
     public Heap(int size) {
@@ -32,7 +31,6 @@ class Heap {
 
     /**
      * adds the int i to the heap
-     *
      * @param i the int to add to the heap
      */
     public void add(int i) {
@@ -69,7 +67,6 @@ class Heap {
 
     /**
      * returns the number of elements currently in the heap
-     *
      * @return the size of the heap
      */
     public int size() {
@@ -84,7 +81,6 @@ class Heap {
     }
 
     private void heapify(int i) {
-
         int rightChildIndex = 2*i+2;
         int leftChildIndex = 2*i+1;
 
@@ -98,18 +94,6 @@ class Heap {
 
             int minChildIndex = ((rightChildIndex) > heapEnd) ? heap[leftChildIndex] :
                     heap[leftChildIndex] <= heap[rightChildIndex] ? leftChildIndex : rightChildIndex;
-
-//            int minChildIndex = 0;
-//
-//            if ((2*i+2) > heapEnd) {
-//                minChildIndex = 2*i+1;
-//            } else {
-//                if (heap[2*i+1] <= heap[2*i+2]) {
-//                    minChildIndex = 2*i+1;
-//                } else {
-//                    minChildIndex = 2*i+2;
-//                }
-//            }
 
             if (heap[i] > heap[minChildIndex]) {
                 swapTwoNodes(i, minChildIndex);
